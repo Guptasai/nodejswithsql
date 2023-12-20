@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Delete Articles</h1>
+        <h1>Article # {{{articleNo}}}</h1>
+        <p>Name:{{{articleName}}}
+            <br>
+            Content:{{{articleContent}}}
+            <br>
+            Last Updated on: {{{articleDate}}}
+        </p>
+        <p>Do You want to delete this article ?</p>
+        <form action = "/article/delete" method = "POST" style = "display: inline;">
+            <input type = "hidden" name = "articleId" value = "{{{articleNo}}}">
+            <input type = "submit" value = "Yes">
+        </form>
+        <form action = "/articles" method = "GET" style = "display: inline;"><input type = "submit" value = "No"></input></form>
+    </body>
+</html>
