@@ -10,11 +10,11 @@ app.use(express.urlencoded({
 }));
 //Creating Connection
 const connection = sql.createConnection({
-    host: "localhost",
-    port: 3390, //port 3306 (default port) was occupied
-    user: "root",
-    password: "",
-    database: "assignment7"
+    host: "mysql-2763b5ba-guptakrishna12004-9384.a.aivencloud.com",
+    port: 10813, //port 3306 (default port) was occupied
+    user: "avnadmin",
+    password: "AVNS_RVLYkqAcC1To6wTFj-V",
+    database: "defaultdb"
 });
 //Connecting to db
 connection.connect((err) => {
